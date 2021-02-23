@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Blanchard - художественная галерея</title>
+</head>
+
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide first">
+            </div>
+            <div class="swiper-slide second">
+            </div>
+            <div class="swiper-slide third">
+            </div>
+        </div>
+        <header>
+            <div class="header-first">
+                <div class="container header__container">
+                    <button class="burger">
+                        <svg class="burger-img" width="36" height="29" viewBox="0 0 36 29" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect width="36" height="3.65217" transform="matrix(-1 0 0 1 36 0.699997)" fill="white" />
+                            <path d="M28.2002 12.8739H0.00019455V16.5261H28.2002V12.8739Z" fill="white" />
+                            <path d="M24 25.0478H0V28.7H24V25.0478Z" fill="white" />
+                        </svg>
+                    </button>
+                    <a href="#" class="header__logo">
+                        <img src="img/header/logo.svg" class="header-logo__img" alt="Blanchard"
+                            aria-label="Blanchard. Художественная галерея">
+                    </a>
+                    <nav class="header__nav">
+                        <ul class="header-nav__list menu">
+                            <li class="header-nav__item">
+                                <a href="#" class="header-nav__link">О нас</a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a href="#" class="header-nav__link">Галерея</a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a href="#" class="header-nav__link">Каталог</a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a href="#" class="header-nav__link">События</a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a href="#" class="header-nav__link">Издания</a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a href="#" class="header-nav__link">Проекты</a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a href="#" class="header-nav__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="header__entrance">
+                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="header-entrance__icon"
+                                d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z"
+                                fill="white" />
+                        </svg>
+                        <a href="#" class="header-entrance__text">Войти</a>
+                    </button> -->
+                    <form action="https://jsonplaceholder.typicode.com/posts" autocomplete="off" method="POST"
+                        class="header__search header-search__first">
+                        <button type="submit" class="header-search__btn header-search__btn--first">
+                            <svg class="header-search__btn-first-icon" width="23" height="22" viewBox="0 0 23 22"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect class="header-search__btn--icon" width="6.8678" height="1.71695"
+                                    transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)"
+                                    fill="white" />
+                                <path class="header-search__btn--icon" fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                        <input class="input header-search__input header-search__input--first" type="text" name="search"
+                            placeholder="Поиск по сайту">
+                    </form>
+                </div>
+            </div>
+            <div class="header-second">
+                <div class="container header__container">
+                    <ul class="header__styles">
+                        <li class="header-styles__item">Реализм</li>
+                        <li class="header-styles__item">Импрессионизм</li>
+                        <li class="header-styles__item">Постимпрессионизм</li>
+                        <li class="header-styles__item">Авангард</li>
+                        <li class="header-styles__item">Футуризм</li>
+                    </ul>
+                    <form action="https://jsonplaceholder.typicode.com/posts" autocomplete="off" method="POST"
+                        class="header__search header-search__second">
+                        <button type="submit" class="header-search__btn">
+                            <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect class="header-search__btn--icon" width="6.8678" height="1.71695"
+                                    transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)"
+                                    fill="white" />
+                                <path class="header-search__btn--icon" fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                        <input class="input header-search__input" type="text" name="search"
+                            placeholder="Поиск по сайту">
+                    </form>
+                </div>
+            </div>
+        </header>
+
+        <section>
+
+
+            <div class="container">
+                <div class="banner banner__container">
+                    <h1 class="banner__title">Прикоснитесь к прекрасному</h1>
+                    <p class="banner__description">Мы вынуждены отталкиваться от того, что реализация намеченных
+                        плановых
+                        заданий создаёт предпосылки для новых предложений.</p>
+                    <button class="btn banner__btn-outline">
+                        <div class="banner__btn">Подписаться на рассылку</div>
+                    </button>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <section class="about-us">
+        <div class="container about-us__container">
+            <h2 class="title about-us__title">О нас</h2>
+            <p class="about-us__description">Ясность нашей позиции очевидна: семантический разбор внешних
+                противодействий однозначно определяет каждого участника как способного принимать собственные решения
+                касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что
+                высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели
+                развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт
+                необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса
+                распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия
+                представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть
+                разоблачены.</p>
+        </div>
+    </section>
+
+
+
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
