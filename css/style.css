@@ -208,9 +208,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding: 10px 14px;
-
 }
-.realism__item:not(:last-child){
+
+.realism__item:not(:last-child) {
     margin-bottom: 20px;
 }
 
@@ -225,12 +225,15 @@
 .tint {
     background-image: url(../img/header/drops/tint.jpg);
 }
+
 .frid {
     background-image: url(../img/header/drops/frid.jpg);
 }
+
 .leo {
     background-image: url(../img/header/drops/leo.jpg);
 }
+
 .ver {
     background-image: url(../img/header/drops/ver.jpg);
 }
@@ -242,10 +245,11 @@
 }
 
 .simplebar-scrollbar::before {
-    background-color:#fff;
+    background-color: #fff;
     border-radius: 0px;
     opacity: 1;
 }
+
 .header-styles__btn::after {
     content: "";
     position: absolute;
@@ -563,6 +567,7 @@
     -ms-transform: none;
     transform: none;
 }
+
 .is-open {
     display: block;
 }
