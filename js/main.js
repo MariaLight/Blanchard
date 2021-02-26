@@ -15,4 +15,17 @@ document.addEventListener("DOMContentLoaded", function () {
     burger.addEventListener('click', function () {
         menu.classList.toggle('is-active');
     })
+
+
+    const outlineBtn = document.querySelector('.banner__btn-outline');
+    const mainBtn = document.querySelector('.banner__btn');
+    mainBtn.addEventListener('focus', function (){
+        outlineBtn.classList.toggle('banner__btn-outline-active');
+    })
+
+    document.querySelector(".header-styles__btn").addEventListener('click', function(){
+        document.querySelector(".realism").classList.toggle('is-open');
+    })
+
+    new SimpleBar(document.querySelector('.realism'));
 })
