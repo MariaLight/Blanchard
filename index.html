@@ -27,16 +27,19 @@
         <header>
             <div class="header-first">
                 <div class="container header-container">
-                    <button class="btn burger" aria-label="Меню">
+                    <button class="btn burger" aria-label="Открыть меню">
                         <svg class="burger-img" width="36" height="29" viewBox="0 0 36 29" fill="white">
                             <use xlink:href="#burger"></use>
+                        </svg>
+                        <svg class="burger-img-x" width="29" height="29" viewBox="0 0 29 29" fill="white">
+                            <use xlink:href="#x"></use>
                         </svg>
                     </button>
                     <a href="#" class="link header-logo">
                         <img src="img/header/logo.svg" class="img header-logo__img" alt="Blanchard">
                     </a>
-                    <nav class="header-nav">
-                        <ul class="list header-nav__list menu">
+                    <nav class="header-nav menu">
+                        <ul class="list header-nav__list menu__list">
                             <li class="header-nav__item">
                                 <a href="#" class="link header-nav__link">О нас</a>
                             </li>
@@ -59,13 +62,14 @@
                                 <a href="#" class="link header-nav__link">Контакты</a>
                             </li>
                         </ul>
+                        <button class="btn header-entrance">
+                            <svg class="header-entrance__icon" width="13" height="13" viewBox="0 0 13 13" fill="white">
+                                <use xlink:href="#entrance"></use>
+                            </svg>
+                            Войти
+                        </button>
                     </nav>
-                    <button class="btn header-entrance">
-                        <svg class="header-entrance__icon" width="13" height="13" viewBox="0 0 13 13" fill="white">
-                            <use xlink:href="#entrance"></use>
-                        </svg>
-                        Войти
-                    </button>
+
                     <form action="https://jsonplaceholder.typicode.com/posts" autocomplete="off" method="POST"
                         class="header-search header-search__first">
                         <button type="submit" class="btn header-search__btn header-search__btn--first">
@@ -80,14 +84,182 @@
             </div>
             <div class="header-second">
                 <div class="container header-container">
-                    <ul class="list header-styles">
+                    <ul class="list header-styles menu">
                         <li class="header-styles__item">
                             <button class="btn header-styles__btn">Реализм</button>
+                            <ul class="list nav__list nav__list--dropdown dropdown-list dropdown-submenu">
+                                <li class="dropdown-submenu__item tint">
+                                    <a href="#" class="link dropdown-submenu__link">Тинторетто</a>
+                                </li>
+                                <li class="dropdown-submenu__item frid">
+                                    <a href="#" class="link dropdown-submenu__link">Фридрих</a>
+
+                                </li>
+                                <li class="dropdown-submenu__item leo">
+                                    <a href="#" class="link dropdown-submenu__link">Леонардо</a>
+
+                                </li>
+                                <li class="dropdown-submenu__item ver">
+                                    <a href="#" class="link dropdown-submenu__link">Верроккьо</a>
+
+                                </li>
+                                <li class="dropdown-submenu__item tint">
+                                    <a href="#" class="link dropdown-submenu__link">Тинторетто</a>
+                                </li>
+                                <li class="dropdown-submenu__item frid">
+                                    <a href="#" class="link dropdown-submenu__link">Фридрих</a>
+
+                                </li>
+                                <li class="dropdown-submenu__item leo">
+                                    <a href="#" class="link dropdown-submenu__link">Леонардо</a>
+
+                                </li>
+                                <li class="dropdown-submenu__item ver">
+                                    <a href="#" class="link dropdown-submenu__link">Верроккьо</a>
+
+                                </li>
+                            </ul>
                         </li>
-                        <li class="header-styles__item">Импрессионизм</li>
-                        <li class="header-styles__item">Постимпрессионизм</li>
-                        <li class="header-styles__item">Авангард</li>
-                        <li class="header-styles__item">Футуризм</li>
+                        <li class="header-styles__item">
+                            <button class="btn header-styles__btn">Импрессионизм</button>
+                            <ul class="list nav__list nav__list--dropdown dropdown-list dropdown-submenu">
+                                <li class="dropdown-submenu__item mon">
+                                    <a href="#" class="link dropdown-submenu__link">Моне</a>
+                                </li>
+                                <li class="dropdown-submenu__item sisl">
+                                    <a href="#" class="link dropdown-submenu__link">Сислей</a>
+
+                                </li>
+                                <li class="dropdown-submenu__item man">
+                                    <a href="#" class="link dropdown-submenu__link">Мане</a>
+
+                                </li>
+                                <li class="dropdown-submenu__item ren">
+                                    <a href="#" class="link dropdown-submenu__link">Ренуар</a>
+
+                                </li>
+                                <li class="dropdown-submenu__item mon">
+                                    <a href="#" class="link dropdown-submenu__link">Моне</a>
+                                </li>
+                                <li class="dropdown-submenu__item sisl">
+                                    <a href="#" class="link dropdown-submenu__link">Сислей</a>
+
+                                </li>
+                                <li class="dropdown-submenu__item man">
+                                    <a href="#" class="link dropdown-submenu__link">Мане</a>
+
+                                </li>
+                                <li class="dropdown-submenu__item ren">
+                                    <a href="#" class="link dropdown-submenu__link">Ренуар</a>
+
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header-styles__item">
+                            <button class="btn header-styles__btn">Постимпрессионизм</button>
+                            <ul class="list nav__list nav__list--dropdown dropdown-list dropdown-submenu">
+                                <li class="dropdown-submenu__item vg">
+                                    <a href="#" class="link dropdown-submenu__link">Ван Гог</a>
+                                </li>
+                                <li class="dropdown-submenu__item sez">
+                                    <a href="#" class="link dropdown-submenu__link">Сезанн</a>
+
+                                </li>
+                                <li class="dropdown-submenu__item gog">
+                                    <a href="#" class="link dropdown-submenu__link">Гоген</a>
+
+                                </li>
+                                <li class="dropdown-submenu__item ser">
+                                    <a href="#" class="link dropdown-submenu__link">Сёра</a>
+
+                                </li>
+                                <li class="dropdown-submenu__item vg">
+                                    <a href="#" class="link dropdown-submenu__link">Ван Гог</a>
+                                </li>
+                                <li class="dropdown-submenu__item sez">
+                                    <a href="#" class="link dropdown-submenu__link">Сезанн</a>
+
+                                </li>
+                                <li class="dropdown-submenu__item gog">
+                                    <a href="#" class="link dropdown-submenu__link">Гоген</a>
+
+                                </li>
+                                <li class="dropdown-submenu__item ser">
+                                    <a href="#" class="link dropdown-submenu__link">Сёра</a>
+
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header-styles__item">
+                            <button class="btn header-styles__btn">Авангард</button>
+                            <ul class="list nav__list nav__list--dropdown dropdown-list dropdown-submenu">
+                                <li class="dropdown-submenu__item kand">
+                                    <a href="#" class="link dropdown-submenu__link">Кандинский</a>
+                                </li>
+                                <li class="dropdown-submenu__item mar">
+                                    <a href="#" class="link dropdown-submenu__link">Маринетти</a>
+
+                                </li>
+                                <li class="dropdown-submenu__item mal">
+                                    <a href="#" class="link dropdown-submenu__link">Малевич</a>
+
+                                </li>
+                                <li class="dropdown-submenu__item pic">
+                                    <a href="#" class="link dropdown-submenu__link">Пикассо</a>
+
+                                </li>
+                                <li class="dropdown-submenu__item kand">
+                                    <a href="#" class="link dropdown-submenu__link">Кандинский</a>
+                                </li>
+                                <li class="dropdown-submenu__item mar">
+                                    <a href="#" class="link dropdown-submenu__link">Маринетти</a>
+
+                                </li>
+                                <li class="dropdown-submenu__item mal">
+                                    <a href="#" class="link dropdown-submenu__link">Малевич</a>
+
+                                </li>
+                                <li class="dropdown-submenu__item pic">
+                                    <a href="#" class="link dropdown-submenu__link">Пикассо</a>
+
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header-styles__item">
+                            <button class="btn header-styles__btn">Футуризм</button>
+                            <ul class="list nav__list nav__list--dropdown dropdown-list dropdown-submenu">
+                                <li class="dropdown-submenu__item karr">
+                                    <a href="#" class="link dropdown-submenu__link">Карра</a>
+                                </li>
+                                <li class="dropdown-submenu__item prat">
+                                    <a href="#" class="link dropdown-submenu__link">Прателла</a>
+
+                                </li>
+                                <li class="dropdown-submenu__item sev">
+                                    <a href="#" class="link dropdown-submenu__link">Северини</a>
+
+                                </li>
+                                <li class="dropdown-submenu__item ball">
+                                    <a href="#" class="link dropdown-submenu__link">Балла</a>
+
+                                </li>
+                                <li class="dropdown-submenu__item karr">
+                                    <a href="#" class="link dropdown-submenu__link">Карра</a>
+                                </li>
+                                <li class="dropdown-submenu__item prat">
+                                    <a href="#" class="link dropdown-submenu__link">Прателла</a>
+
+                                </li>
+                                <li class="dropdown-submenu__item sev">
+                                    <a href="#" class="link dropdown-submenu__link">Северини</a>
+
+                                </li>
+                                <li class="dropdown-submenu__item ball">
+                                    <a href="#" class="link dropdown-submenu__link">Балла</a>
+
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                     <form action="https://jsonplaceholder.typicode.com/posts" autocomplete="off" method="POST"
                         class="header-search header-search__second">
@@ -103,38 +275,7 @@
             </div>
             <div class="container selects">
                 <div class="realism" data-simplebar>
-                    <ul class="list realism__list">
-                        <li class="realism__item tint">
-                            <a href="#" class="link realism__link">Тинторетто</a>
-                        </li>
-                        <li class="realism__item frid">
-                            <a href="#" class="link realism__link">Фридрих</a>
 
-                        </li>
-                        <li class="realism__item leo">
-                            <a href="#" class="link realism__link">Леонардо</a>
-
-                        </li>
-                        <li class="realism__item ver">
-                            <a href="#" class="link realism__link">Верроккьо</a>
-
-                        </li>
-                        <li class="realism__item tint">
-                            <a href="#" class="link realism__link">Тинторетто</a>
-                        </li>
-                        <li class="realism__item frid">
-                            <a href="#" class="link realism__link">Фридрих</a>
-
-                        </li>
-                        <li class="realism__item leo">
-                            <a href="#" class="link realism__link">Леонардо</a>
-
-                        </li>
-                        <li class="realism__item ver">
-                            <a href="#" class="link realism__link">Верроккьо</a>
-
-                        </li>
-                    </ul>
                 </div>
             </div>
         </header>
@@ -174,11 +315,33 @@
         </div>
     </section>
 
+    <section class="gallery">
+        <div class="container gallery__container">
+            <div class="gallery__left">
+                <h2 class="title gallery__title">Галерея</h2>
+                <span class="gallery__filter">Фильтровать по:</span>
+                
+                <span class="gallery__note">
+                    Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний 
+                    <a href="#" class="link gallery-note__link">авторизуйтесь</a>
+                    , либо воспользуйтесь лицензией. 
+                </span>
+            </div>
+            <div class="gallery__right">
+
+            </div>
+        </div>
+    </section>
+
 
 
 
 
     <svg style="display: none;">
+        <symbol id="x" viewBox="0 0 29 29">
+            <rect x="2.63623" width="37.2838" height="3.72838" transform="rotate(45 2.63623 0)" fill="white" />
+            <rect y="26.3636" width="37.2838" height="3.72838" transform="rotate(-45 0 26.3636)" fill="white" />
+        </symbol>
         <symbol id="burger" viewBox="0 0 36 29">
             <rect width="36" height="3.65217" transform="matrix(-1 0 0 1 36 0.699997)" />
             <path d="M28.2002 12.8739H0.00019455V16.5261H28.2002V12.8739Z" />
