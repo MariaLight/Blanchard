@@ -76,7 +76,7 @@
 }
 
 .container {
-    max-width: 1600px;
+    max-width: 84%;
     margin: 0 auto;
 }
 
@@ -532,9 +532,7 @@
 }
 
 @media (max-width: 1920px) {
-    .container {
-        max-width: 1200px;
-    }
+    
     .header-logo {
         margin-right: 80px;
     }
@@ -546,10 +544,8 @@
     }
 }
 
-@media (max-width: 1220px) {
-    .container {
-        max-width: 925px;
-    }
+@media (max-width: 1380px) {
+    
     .anim-bg {
         background-image: url(../img/hero/hero-1024-1.jpg);
     }
@@ -627,9 +623,7 @@
 }
 
 @media (max-width: 960px) {
-    .container {
-        max-width: 660px;
-    }
+    
     .banner__container {
         padding-top: 105px;
     }
@@ -642,9 +636,7 @@
 }
 
 @media (max-width: 670px) {
-    .container {
-        max-width: 91%;
-    }
+   
     .anim-bg {
         background-image: url(../img/hero/hero-320-1.jpg);
     }
