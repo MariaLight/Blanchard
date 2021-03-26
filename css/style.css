@@ -492,7 +492,7 @@
 
 .gallery {
     background-image: url(../img/gallery/gallery-bg.jpg);
-    padding: 80px 160px;
+    padding: 80px 0;
 }
 
 .gallery__left {
