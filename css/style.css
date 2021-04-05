@@ -35,11 +35,11 @@
     font-display: swap;
     font-style: normal;
 }
-/* html {
+html {
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
-} */
+}
 
 .body {
     width: 100%;
