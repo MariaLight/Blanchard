@@ -35,8 +35,15 @@
     font-display: swap;
     font-style: normal;
 }
+/* html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+} */
 
 .body {
+    width: 100%;
+    max-width: 100%;
     font-family: 'OpenSans', sans-serif;
     font-size: 16px;
     line-height: 32px;
@@ -76,8 +83,8 @@
 }
 
 .container {
-    max-width: 84%;
-    margin: 0 auto;
+    max-width: 1600px;
+    margin: 0 160px;
 }
 
 .title {
@@ -103,7 +110,6 @@
     padding: 30px 0;
     display: flex;
     align-items: center;
-    width: 100%;
 }
 
 .header-second .header-container {
@@ -161,6 +167,14 @@
     padding: 2px 6px 2px 6px;
     border: 2px solid transparent;
     margin-left: auto;
+    background-color: transparent;
+    color: #fff;
+}
+
+.header-entrance--responsive {
+    display: none;
+    padding: 2px 6px 2px 6px;
+    border: 2px solid transparent;
     background-color: transparent;
     color: #fff;
 }
@@ -537,15 +551,14 @@
         margin-right: 80px;
     }
     .header-nav__item:not(:last-child) {
-        margin-right: 30px;
+        margin-right: 15px;
     }
     .header-styles__item:not(:last-child) {
         margin-right: 40px;
     }
 }
 
-@media (max-width: 1380px) {
-    
+@media (max-width: 1390px) {
     .anim-bg {
         background-image: url(../img/hero/hero-1024-1.jpg);
     }
@@ -563,7 +576,7 @@
         display: block;
         position: absolute;
         z-index: 10;
-        left: 0;
+        right: 0;
         top: 0;
         width: 100%;
         margin-top: 105px;
@@ -590,11 +603,16 @@
         margin-bottom: 122px;
     }
     .header-entrance {
+        display: none;
+    }
+    .header-entrance--responsive {
+        display: block;
         border: 2px solid var(--violet);
         border-radius: 100px;
         padding: 20px 88px;
         margin-bottom: 51px;
         margin-left: 88px;
+        background-color: transparent;
     }
     .header-nav__item:not(:last-child) {
         margin-right: 0;
@@ -623,20 +641,24 @@
 }
 
 @media (max-width: 960px) {
-    
+    .container {
+        margin: 0 48px;
+    }
     .banner__container {
         padding-top: 105px;
     }
     .anim-bg {
         background-image: url(../img/hero/hero-768-1.jpg);
     }
-    .header-entrance {
+    .header-entrance--responsive {
         margin-left: 51px;
     }
 }
 
 @media (max-width: 670px) {
-   
+    .container {
+        margin: 0 20px;
+    }
     .anim-bg {
         background-image: url(../img/hero/hero-320-1.jpg);
     }
@@ -673,7 +695,7 @@
     .menu__list {
         margin-bottom: 18px;
     }
-    .header-entrance {
+    .header-entrance--responsive {
         font-size: 12px;
         line-height: 16px;
         margin-left: 15px;
