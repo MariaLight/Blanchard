@@ -42,6 +42,7 @@ html {
 }
 
 .body {
+    position: relative;
     width: 100%;
     max-width: 100%;
     font-family: 'OpenSans', sans-serif;
@@ -558,7 +559,7 @@ html {
     }
 }
 
-@media (max-width: 1390px) {
+@media (max-width: 1420px) {
     .anim-bg {
         background-image: url(../img/hero/hero-1024-1.jpg);
     }
