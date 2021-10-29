@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    const swiper = new Swiper('.swiper-container', {
-        direction: 'horizontal',
-        loop: true,
+    // const swiper = new Swiper('.swiper-container', {
+    //     direction: 'horizontal',
+    //     loop: true,
 
-        autoplay: {
-            delay: 2000,
-        },
-    });
+    //     autoplay: {
+    //         delay: 2000,
+    //     },
+    // });
 
     const burger = document.querySelector('.burger');
     const menu = document.querySelector('.menu');
@@ -32,4 +32,38 @@ document.addEventListener("DOMContentLoaded", function () {
     for (let i = 0; i < drops.length; ++i) {
         new SimpleBar(drops[i]);
     }
+
+    const filter = document.querySelector('#galleryFilter');
+    const galleryFilter = new Choices(filter, {
+        searchEnabled: false,
+        itemSelectText: '',
+    });
+
+    const gallerySwiper = new Swiper('.gallery__swiper', {
+        direction: 'horizontal',
+        slideClass: 'gallery-slide',
+        wrapperClass: 'gallery-wrapper',
+        autoHeight: false,
+        watchOverflow: true,
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        spaceBetween: 50,
+        grid: {
+            rows: 2,
+        },
+
+
+
+        pagination: {
+            el: '.gallery-pagination',
+            type: 'fraction',
+
+        },
+
+        navigation: {
+            nextEl: '.gallery-button-next',
+            prevEl: '.gallery-button-prev',
+        },
+
+    });
 })

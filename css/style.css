@@ -35,6 +35,7 @@
     font-display: swap;
     font-style: normal;
 }
+
 html {
     width: 100%;
     max-width: 100%;
@@ -510,11 +511,20 @@ html {
     padding: 80px 0;
 }
 
-.gallery__left {
+.gallery__container {
     display: flex;
     align-items: start;
+}
+
+.gallery__left {
+    display: flex;
+    /* align-items: start; */
     flex-direction: column;
     max-width: 400px;
+    min-width: 400px;
+    padding-right: 50px;
+    justify-content: space-between;
+    height: 835px;
 }
 
 .gallery__title {
@@ -525,14 +535,194 @@ html {
 .gallery__filter {
     color: #fff;
     font-weight: 600;
+    margin-bottom: 20px;
 }
+
 .gallery__note {
     color: #fff;
-    margin-top: auto;
     font-weight: 600;
 }
+
 .gallery-note__link {
     color: var(--light-violet);
+}
+
+.choices {
+    width: 100%;
+}
+
+.choices[data-type*=select-one]:after {
+    content: '';
+    border-style: solid;
+    border-width: 1px;
+    border-color: transparent #fff #fff transparent;
+    width: 7px;
+    height: 7px;
+    transform: rotate(45deg);
+    margin-top: -7.5px;
+    right: 15px;
+}
+
+.choices[data-type*=select-one].is-open:after {
+    content: '';
+    border-style: solid;
+    border-width: 1px;
+    border-color: transparent #fff #fff transparent;
+    width: 7px;
+    height: 7px;
+    transform: rotate(-135deg);
+    margin-top: -2.5px;
+    right: 15px;
+}
+
+.choices__inner {
+    background-color: transparent;
+    padding: 3px 15px 15px 15px;
+    border: 1px solid #fff;
+    border-radius: 6px;
+}
+
+.is-focused .choices__item {
+    color: #fff;
+}
+
+.is-open .choices__inner {
+    background-color: transparent;
+    padding: 3px 15px 15px 15px;
+    border: 1px solid #fff;
+    border-radius: 6px;
+}
+
+.choices__list {
+    background-color: transparent;
+}
+
+.choices__item {
+    font-size: 16px;
+    line-height: 32px;
+    color: #fff;
+    font-weight: 400;
+    margin-right: 0;
+    padding-right: 0px;
+    opacity: 1;
+}
+
+.is-open .choices__list--dropdown {
+    border: 1px solid transparent;
+    border-radius: 6px;
+}
+
+.choices__list--dropdown .choices__item {
+    border: 1px solid #999;
+    border-radius: 6px;
+    color: #999;
+}
+
+.choices__list--dropdown .choices__item:hover {
+    color: #fff;
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted {
+    background-color: transparent;
+}
+
+.gallery__right {
+    max-width: 1600px;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 25px;
+}
+
+.gallery__swiper {
+    /* overflow: hidden; */
+    width: 100%;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery-wrapper {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    transition-property: transform;
+    box-sizing: content-box;
+    height: 750px;
+}
+
+.gallery-slide {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    max-width: 350px;
+    /* max-height: 350px; */
+    height: calc((100% - 50px) / 2);
+    /* margin-bottom: 50px; */
+}
+
+/* .gallery-slide:nth-child(n+4) {
+    margin-bottom: 0;
+} */
+
+.gallery-img {
+    max-width: 350px;
+    max-height: 350px;
+}
+
+.gallery__navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: static;
+    margin-bottom: 30px;
+    max-width: 130px;
+}
+
+.gallery-pagination {
+    color: #fff;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.gallery-button-next, .gallery-button-prev {
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    background-color: var(--grey);
+    border-radius: 50%;
+    position: relative;
+}
+
+.gallery-button-prev {
+    margin-right: 11px;
+}
+
+.gallery-button-next {
+    margin-left: 11px;
+}
+
+.gallery-button-next::before, .gallery-button-prev::before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    top: 11px;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
+.gallery-button-next::before {
+    transform: rotate(-45deg);
+    margin-left: 9px;
+}
+
+.gallery-button-prev::before {
+    transform: rotate(135deg);
+    margin-left: 12px;
 }
 
 @media (min-width: 1220px) {
@@ -547,7 +737,6 @@ html {
 }
 
 @media (max-width: 1920px) {
-    
     .header-logo {
         margin-right: 80px;
     }
