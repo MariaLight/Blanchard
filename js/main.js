@@ -45,11 +45,52 @@ document.addEventListener("DOMContentLoaded", function () {
         wrapperClass: 'gallery-wrapper',
         autoHeight: false,
         watchOverflow: true,
-        slidesPerView: 3,
+        // slidesPerView: 3,
         slidesPerGroup: 3,
-        spaceBetween: 50,
-        grid: {
-            rows: 2,
+        // spaceBetween: 50,
+        
+
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 34,
+                slidesPerGroup: 1,
+
+                grid: {
+                    rows: 1,
+                },
+                centeredSlides: true,
+            },
+            670: {
+                slidesPerView: 2,
+                slidesPerGroup: 2,
+
+                spaceBetween: 34,
+                grid: {
+                    rows: 2,
+                },
+            },
+            1240: {
+                slidesPerView: 3,
+                spaceBetween: 34,
+                grid: {
+                    rows: 2,
+                },
+            },
+            1440: {
+                slidesPerView: 2,
+                spaceBetween: 50,
+                grid: {
+                    rows: 2,
+                },
+            },
+            1740: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+                grid: {
+                    rows: 2,
+                },
+            }
         },
 
 
